@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body style="font-family: Arial, sans-serif; color: #222">
+    <h2>Hi, {{ username }}!</h2>
+    <p>Thanks for signing up. Please confirm your e-mail address:</p>
+    <p>
+      <a href="{{ host }}api/auth/confirmed_email/{{ token }}"
+         style="background:#2563eb;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none">
+        Confirm e-mail
+      </a>
+    </p>
+    <p>If you did not register, just ignore this message.</p>
+  </body>
+</html>

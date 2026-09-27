@@ -1,0 +1,22 @@
+[project]
+name = "goit-pythonweb-hw-12"
+version = "1.0.0"
+description = "Contacts REST API (FastAPI) — GoIT Python Web homework 12"
+authors = [{ name = "Denys Finchenko", email = "dfinchenko@gmail.com" }]
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.run]
+source = ["src", "main"]
+omit = ["tests/*"]
+concurrency = ["greenlet", "thread"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

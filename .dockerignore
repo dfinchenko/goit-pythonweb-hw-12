@@ -1,0 +1,11 @@
+.env
+.git
+.venv
+venv
+__pycache__
+.pytest_cache
+.coverage
+htmlcov
+docs/_build
+postgres-data
+tests
